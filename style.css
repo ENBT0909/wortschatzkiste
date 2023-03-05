@@ -1,0 +1,130 @@
+/*CSS-Styling*/
+      /********** Hier fehlt noch ein Hintergrundbild ***************/
+      body {
+         margin: 0;
+         padding: 0;
+         background-color: #000;
+         color: #fff;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         font-family: 'Alex Brush', cursive;
+         background-image: url(https://images5.alphacoders.com/101/1014875.jpg);
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+      }
+
+      /*font-family: 'Miltonian', cursive;*/
+
+      header {
+         height: 150px;
+         width: 100vw;
+         display: flex;
+         justify-content: right;
+         margin-right: 0;
+         background-color: #fff;
+         position: fixed;
+      }
+
+      h3 {
+         color: #f00;
+         text-align: center;
+         margin: -4% 40% 0 10%;
+         padding-top: 0;
+         font-family: 'Tilt Prism', cursive;
+         font-size: 28px;
+         display: flex;
+         align-items: center;
+         text-shadow: 
+         1px 1px 1px #fff, 1px 1px 10px #fff, 
+         2px 2px 5px gray, 3px 3px 4px gray, 
+         4px 4px 4px gray, 5px 5px 3px gray, 
+         6px 6px 3px gray, 7px 7px 2px gray, 
+         8px 8px 1px gray, 9px 9px 0px gray, 
+         0 0 25px #f00;
+         z-index: 2;
+      }
+
+      img {
+         position: fixed;
+         top: 0;
+         right: 0;
+         width: 150px;
+         height: 150px;
+      }
+
+      section {
+         margin-right: 20vw;
+         margin-top: 50%;
+         margin-left: 2px;
+         width: 100vw;
+         font-size: 28px;
+      }
+
+      #ueberschrift {
+         position: fixed;
+         /* absolute */
+         top: 20%;
+         left: 30%;
+         transform: rotate(-90deg) translate(-50%, 100%);
+         /*(-100%, 0%);*/
+         /*background-color: #fff;*/
+         color: rgba(0, 0, 255, 0);
+         font-size: 45px;
+         text-align: center;
+         padding: 0 20px 2px 20px;
+         letter-spacing: 5px;
+      }
+
+      @keyframes change-color {
+         0% {
+            color: red;
+         }
+
+         25% {
+            color: #fc0;
+         }
+
+         50% {
+            color: blue;
+         }
+
+         75% {
+            color: green;
+         }
+
+         100% {
+            color: purple;
+         }
+      }
+
+      .color-change {
+         animation: change-color 4s 2;
+      }
+
+      ol {
+         margin: 5px 0 0 25px;
+      }
+
+      @media only screen and (max-width: 600px) {
+         body {
+            font-size: 16px;
+         }
+         h3 {
+            margin-top: -10%;
+         }
+      }
+
+      /*@media only screen and (min-width: 600px) {
+         body {
+            font-size: 22px;
+         }
+      }*/
+
+      @media only screen and (max-width: 250px) {
+         body {
+            color: #000;
+         }
+      }
